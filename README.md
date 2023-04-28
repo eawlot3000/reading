@@ -7,7 +7,7 @@ tech in gen
 security
 news?
 
-# >>>>> Topics <<<<<
+# >>> Topics <<<
 ---
 * [Websites](#website)
 * [Substack](#substack)

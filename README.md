@@ -12,7 +12,7 @@ news?
 * [Websites](#websites)
 * [Substack](#substack)
 * [Blogs (/personal)](#blogs)
-* [Artificial Intelligence/Machine Learning](#ai-ml)
+* [Artificial Intelligence/Machine Learning](#AI-ML)
 * [Web3/Crypto/Blockchain/Distributed Systems](#web3-crypto-blockchain-distributed-systems)
 * [Cybersecurity](#cybersecurity)
 * [Data Science/Big Data](#data-science-big-data)

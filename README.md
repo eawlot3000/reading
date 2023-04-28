@@ -44,7 +44,7 @@ news?
 * [卡钦斯基：论工业社会及其未来 | 素生.](https://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html)
 
 ## AI / ML
-https://thisaidoesnotexist.com/
+* [This AI Does Not Exist](https://thisaidoesnotexist.com/)
 
 
 ## Web3 / Crypto / Blockchain / Distributed Systems

@@ -10,14 +10,14 @@ news?
 # >>> Topics <<<
 ---
 * [Websites](#websites)
-* [Substack](#substack)
 * [Blogs (/personal)](#blogs)
-* [Artificial Intelligence/Machine Learning](#AI-ML)
+* [Artificial Intelligence/Machine Learning](#aiml)
 * [Web3/Crypto/Blockchain/Distributed Systems](#web3-crypto-blockchain-distributed-systems)
 * [Cybersecurity](#cybersecurity)
 * [Data Science/Big Data](#data-science-big-data)
 * [Github Repos / Library&Packages](#github-repos-library-packages)
 * [General](#general)
+* [Substack](#substack)
 
 
 
@@ -82,5 +82,6 @@ news?
 * [客观评价习近平四万字慎读](https://matters.town/@arkincollapse/231305-%E5%AE%A2%E8%A7%82%E8%AF%84%E4%BB%B7%E4%B9%A0%E8%BF%91%E5%B9%B3-%E5%9B%9B%E4%B8%87%E5%AD%97-%E6%85%8E%E8%AF%BB-bafyreifjawzgfpk2h67tg65m636sve6yeawydsbxddakq65okgqwuy552u) - an article on the recent 40,000-word speech by Chinese President Xi Jinping and its implications.
 
 
-
+## Substack
+read yoo ass in the website yo - [substack](https://substack.com/inbox)
 

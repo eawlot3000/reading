@@ -1,35 +1,42 @@
-# The real reading list
+# The real reading list ❤️
+
+
 
 -->
 tech in gen
 security
 news?
 
-### Topics
+# Topics
 ---
-* [Substack]()
+* [Substack](substack)
 - [Blogs (/personal)](#blogs)
-- [Web3/Crypto](#web3crypto)
+- [AI / ML](#aiml)
+- [Web3 / Crypto](#future)
 - [Cybersecurity](#cybersecurity)
-- [AIML Intelligence/Machine Learning](#aiml)
 - [Blockchain/Distributed Systems](#blockchain)
 - [Data Science/Big Data](#datascience)
 * [Github](#github)
 
 
-#### Blogs
+## Blogs
 * [LessWrong](https://www.lesswrong.com/)
 * [Twitter Recommendation Algorithm](https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)
-<br> ---------- Personal ---------- [Vitalik Buterin' Blog](https://vitalik.ca/)
-#### Web3/Crypto
+<br> ---------- Personal ----------
+[Vitalik Buterin' Blog](https://vitalik.ca/)
+## future
 sadfsadf
-#### Cybersecurity
+## cybersecurity
 asdfasdf
-#### Artificial Intelligence/Machine Learning
-#### Blockchain/Distributed Systems
-#### Data Science/Big Data
+## aiml
+## Blockchain/Distributed Systems
+## Data Science/Big Data
 * [Hugging Face](https://huggingface.co/)
 
+
+## [random reads](#random)
+
+## random
 * [Why is Rosetta 2 fast?](https://dougallj.wordpress.com/2022/11/09/why-is-rosetta-2-fast/)
 * [Proposed Milestones for Rollups Taking Off Training Wheels](https://ethereum-magicians.org/t/proposed-milestones-for-rollups-taking-off-training-wheels/11571)
 * [Vitalik's ETH Limo](https://vitalik.eth.limo/)

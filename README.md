@@ -43,7 +43,7 @@ news?
 * [Tom’s Blog. 卡辛斯基《论工业社会及其未来》.](http://yoursite.com/2018/06/20/unabomber1/index.html)
 * [卡钦斯基：论工业社会及其未来 | 素生.](https://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html)
 
-## AI / ML
+## AI/ML
 * [This AI Does Not Exist](https://thisaidoesnotexist.com/)
 
 

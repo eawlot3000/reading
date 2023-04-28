@@ -21,10 +21,6 @@ news?
 
 
 
-* [Backspace.Ai.](https://backspace.ai/)
-* [DKB.](https://dkb.io/)
-* [Ecromata.](https://ecromata.com/)
-* [Machine Intelligence Research Institute. All Publications.](https://intelligence.org/all-publications/)
 
 ## Websites
 * [Hacker News.](https://news.ycombinator.com/news)
@@ -32,7 +28,7 @@ news?
   * [Can Things Be Both Popular And Silenced? | Slate Star Codex.](https://slatestarcodex.com/2018/05/23/can-things-be-both-popular-and-silenced/)
 * [V2EX](https://www.v2ex.com)
 * [Hacker Newsletter](https://hackernewsletter.com/)
-* [The Library - LessWrong.](https://www.lesswrong.com/library)
+* [Machine Intelligence Research Institute. All Publications.](https://intelligence.org/all-publications/)
 
 ## Blogs
 * [LessWrong](https://www.lesswrong.com/)
@@ -40,19 +36,16 @@ news?
 <br> ---------- Personal ---------- <br>
 * [Geohot's blog](https://geohot.github.io/blog/)
 * [Vitalik Buterin' Blog](https://vitalik.ca/)
-* <details> <summary>Ran Prieur</summary>
-  * [Ran Prieur.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com/index.html)
+* [Ran Prieur.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com/index.html)
   * [How to Drop Out.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com\/essays\/dropout.html)
-</details>
-
-
-https://dkb.blog/
-https://thesephist.com/posts/
+* [ThesePhist](https://thesephist.com/posts/)
+* [DKB.](https://dkb.io/)
 * [Tom’s Blog. 卡辛斯基《论工业社会及其未来》.](http://yoursite.com/2018/06/20/unabomber1/index.html)
 * [卡钦斯基：论工业社会及其未来 | 素生.](https://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html)
 
 ## AI / ML
 https://thisaidoesnotexist.com/
+
 
 ## Web3 / Crypto / Blockchain / Distributed Systems
 * [Proposed Milestones for Rollups Taking Off Training Wheels](https://ethereum-magicians.org/t/proposed-milestones-for-rollups-taking-off-training-wheels/11571)
@@ -66,14 +59,15 @@ https://thisaidoesnotexist.com/
 * [Hugging Face](https://huggingface.co/)
 
 ## Github Repos / Library&Packages
-https://pkg.go.dev/std
-https://github.com/beijinglug/fsfs-zh
+* [Go Standard Library](https://pkg.go.dev/std) - the official documentation for the Go standard library.
+* [fsfs-zh](https://github.com/beijinglug/fsfs-zh) - a Chinese translation of the book "Free Software, Free Society" by Richard Stallman.
 * [Adam Singer](https://adam-singer.github.io/)
 * [Mastodon GitHub](https://github.com/mastodon/mastodon)
 
 ## General
 * [How I Hit $100k/yr On GitHub Sponsors](https://calebporzio.com/i-just-hit-dollar-100000yr-on-github-sponsors-heres-how-i-did-it)
 * [Palladium](https://www.palladiummag.com/)
+* [Backspace.Ai.](https://backspace.ai/)
 * [Why is Rosetta 2 fast?](https://dougallj.wordpress.com/2022/11/09/why-is-rosetta-2-fast/)
 * [Mastodon](https://zh.wikipedia.org/wiki/Mastodon)
 * [ActivityPub](https://zh.wikipedia.org/wiki/ActivityPub)
@@ -85,7 +79,7 @@ https://github.com/beijinglug/fsfs-zh
 * [Sponsorware by Caleb Porzio](https://calebporzio.com/sponsorware)
 * [Zig Language](https://ziglang.org/)
 * [Top 10 Web Hacking Techniques of 2021](https://portswigger.net/research/top-10-web-hacking-techniques-of-2021)
-https://matters.town/@arkincollapse/231305-%E5%AE%A2%E8%A7%82%E8%AF%84%E4%BB%B7%E4%B9%A0%E8%BF%91%E5%B9%B3-%E5%9B%9B%E4%B8%87%E5%AD%97-%E6%85%8E%E8%AF%BB-bafyreifjawzgfpk2h67tg65m636sve6yeawydsbxddakq65okgqwuy552u
+* [客观评价习近平四万字慎读](https://matters.town/@arkincollapse/231305-%E5%AE%A2%E8%A7%82%E8%AF%84%E4%BB%B7%E4%B9%A0%E8%BF%91%E5%B9%B3-%E5%9B%9B%E4%B8%87%E5%AD%97-%E6%85%8E%E8%AF%BB-bafyreifjawzgfpk2h67tg65m636sve6yeawydsbxddakq65okgqwuy552u) - an article on the recent 40,000-word speech by Chinese President Xi Jinping and its implications.
 
 
 

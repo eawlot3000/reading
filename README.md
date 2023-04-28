@@ -42,8 +42,9 @@ news?
 * [Vitalik Buterin' Blog](https://vitalik.ca/)
 * <details> <summary>Ran Prieur</summary>
   * [Ran Prieur.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com/index.html)
-  * [How to Drop Out.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com/essays/dropout.html)
+  * [How to Drop Out.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com\/essays\/dropout.html)
 </details>
+
 
 https://dkb.blog/
 https://thesephist.com/posts/

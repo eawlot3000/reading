@@ -9,23 +9,21 @@ news?
 
 # >>> Topics <<<
 ---
-* [Websites](#website)
+* [Websites](#websites)
 * [Substack](#substack)
 * [Blogs (/personal)](#blogs)
-* [AI/ML](#aiml)
-* [Web3 / Crypto / Blockchain / Distributed Systems](#future)
+* [Artificial Intelligence/Machine Learning](#ai-ml)
+* [Web3/Crypto/Blockchain/Distributed Systems](#web3-crypto-blockchain-distributed-systems)
 * [Cybersecurity](#cybersecurity)
-* [Blockchain/Distributed Systems](#blockchain)
-* [Data Science/Big Data](#datascience)
-* [Github](#github)
-* [General reads](#General)
+* [Data Science/Big Data](#data-science-big-data)
+* [Github Repos](#github-repos)
+* [General](#general)
+
 
 
 ## Websites
 * [Hacker Newsletter](https://hackernewsletter.com/)
 * [V2EX](https://www.v2ex.com)
-
-
 
 ## Blogs
 * [LessWrong](https://www.lesswrong.com/)
@@ -33,25 +31,23 @@ news?
 <br> ---------- Personal ---------- <br>
 * [Vitalik Buterin' Blog](https://vitalik.ca/)
 
-## future
+## AI/ML
 
-## cybersecurity
-* [HowTo: Prevent Hacker Attack](https://web.archive.org/web/20110722062454/http://program-think.blogspot.com/2010/06/howto-prevent-hacker-attack-1.html)
-
-## Artificial Intelligence/Machine Learning
-
-## Web3
+## Web3/Crypto/Blockchain/Distributed Systems
 * [Proposed Milestones for Rollups Taking Off Training Wheels](https://ethereum-magicians.org/t/proposed-milestones-for-rollups-taking-off-training-wheels/11571)
 * [Bitcoin Magazine](https://bitcoinmagazine.com/)
+
+## Cybersecurity
+* [HowTo: Prevent Hacker Attack](https://web.archive.org/web/20110722062454/http://program-think.blogspot.com/2010/06/howto-prevent-hacker-attack-1.html)
 
 ## Data Science/Big Data
 * [Hugging Face](https://huggingface.co/)
 
-## tech news
+## Github Repos
+* [Adam Singer](https://adam-singer.github.io/)
+* [Mastodon GitHub](https://github.com/mastodon/mastodon)
 
-
-
-## General (or whatever, this one's not important)
+## General
 * [How I Hit $100k/yr On GitHub Sponsors](https://calebporzio.com/i-just-hit-dollar-100000yr-on-github-sponsors-heres-how-i-did-it)
 * [Palladium](https://www.palladiummag.com/)
 * [Why is Rosetta 2 fast?](https://dougallj.wordpress.com/2022/11/09/why-is-rosetta-2-fast/)
@@ -65,12 +61,4 @@ news?
 * [Sponsorware by Caleb Porzio](https://calebporzio.com/sponsorware)
 * [Zig Language](https://ziglang.org/)
 * [Top 10 Web Hacking Techniques of 2021](https://portswigger.net/research/top-10-web-hacking-techniques-of-2021)
-
-
-
-#### Github Repos
-* [Adam Singer](https://adam-singer.github.io/)
-* [Mastodon GitHub](https://github.com/mastodon/mastodon)
-
-
 

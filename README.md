@@ -29,6 +29,7 @@ news?
 * [LessWrong](https://www.lesswrong.com/)
 * [Twitter Recommendation Algorithm](https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)
 <br> ---------- Personal ---------- <br>
+* [Geohot's blog](https:www.geohot.com)
 * [Vitalik Buterin' Blog](https://vitalik.ca/)
 
 ## AI/ML

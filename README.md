@@ -15,7 +15,7 @@ news?
 * [Web3/Crypto/Blockchain/Distributed Systems](#web3--crypto--blockchain--distributed-systems)
 * [Cybersecurity](#cybersecurity)
 * [Data Science/Big Data](#data-science--big-data)
-* [Github Repos / Library&Packages](#github-repos-library-packages)
+* [Github Repos / Library&Packages](#github-repos--librarypackages)
 * [General](#general)
 * [Substack](#substack)
 

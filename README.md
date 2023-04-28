@@ -23,11 +23,9 @@ news?
 * [LessWrong](https://www.lesswrong.com/)
 * [Twitter Recommendation Algorithm](https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)
 <br> ---------- Personal ---------- <br>
-[Vitalik Buterin' Blog](https://vitalik.ca/)
+* [Vitalik Buterin' Blog](https://vitalik.ca/)
 ## future
-sadfsadf
 ## cybersecurity
-asdfasdf
 ## aiml
 ## Blockchain/Distributed Systems
 ## Data Science/Big Data

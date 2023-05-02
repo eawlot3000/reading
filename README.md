@@ -19,9 +19,8 @@ news?
 * [General](#general)
 * [Substack](#substack)
 
-
-
 <br>
+
 ----
 
 ## Websites

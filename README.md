@@ -37,6 +37,7 @@ news?
 <br> ---------- Personal ---------- <br>
 * [Geohot's blog](https://geohot.github.io/blog/)
 * [Vitalik Buterin' Blog](https://vitalik.ca/)
+* [Lilian Weng](https://lilianweng.github.io)
 * [Ran Prieur.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com/index.html)
   * [How to Drop Out.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com\/essays\/dropout.html)
 * [ThesePhist](https://thesephist.com/posts/)

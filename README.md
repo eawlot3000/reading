@@ -30,6 +30,7 @@ news?
 * [V2EX](https://www.v2ex.com)
 * [Hacker Newsletter](https://hackernewsletter.com/)
 * [Machine Intelligence Research Institute. All Publications.](https://intelligence.org/all-publications/)
+* [X Ai](https://x.ai)
 
 ## Blogs
 * [LessWrong](https://www.lesswrong.com/)
@@ -40,6 +41,7 @@ news?
 * [Lilian Weng](https://lilianweng.github.io)
 * [Ran Prieur.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com/index.html)
   * [How to Drop Out.](http://www.john-edwin-tobey.org/cgi-bin/ran/2017-07-22T05:12:58/ranprieur.com\/essays\/dropout.html)
+* [Yuhuai Wu](https://yuhuaiwu.github.io)
 * [ThesePhist](https://thesephist.com/posts/)
 * [DKB.](https://dkb.io/)
 * [Tom’s Blog. 卡辛斯基《论工业社会及其未来》.](http://yoursite.com/2018/06/20/unabomber1/index.html)

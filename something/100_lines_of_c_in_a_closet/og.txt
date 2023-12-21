@@ -1,0 +1,229 @@
+===============================================================================
+blog.notryan.com/009.txt                                       Tue, 05 May 2020
+Ryan Jacobs                                                      05:40:00 -0700
+                           100 Lines of C, in a Closet
+                           . . . . . . . . . . . . . .
+===============================================================================
+
+UPDATE:
+  Wow this garnered a lot more traffic than I anticipated. I'm going to post
+  an update in a follow-up post that breaks down the steps of implementing
+  server.c. I've got some interesting hints for y'all on path traversal.
+  Additionally, the server is now safe against random netcat garbage that
+  doesn't conform to the HTTP/1.1 spec. This is achieved by rejecting requests
+  that don't meet the basic criteria: begins with "GET ", contains at least
+  one more space, does not include any '/' characters.
+
+  Also, I've just converted the server to use fork() in addition to accept().
+  The throughput has dropped from 20k req/s down to 8k... because of the
+  process forking overhead. But now we can handle concurrent requests. I think
+  it is a worthy trade-off.
+
+-------------------------------------------------------------------------------
+
+Heyo! I think I'm all done. I've reached a feature completeness I'm proud of.
+
+This blog is now nearly entirely self-hosted. I am running it on a Thinkpad
+T440p laptop in my closet! View the source code at https://blog.notryan.com
+
+Here's what the stack looks like:
+  * KVM Virtual Machine -> Void Linux
+
+    * It can do live migrations to any device on my LAN, with zero downtime.
+      KVM is really cool! It transfers the RAM continuously until it's
+      fully synced. This takes about 30 seconds.
+
+    * The VM's disk storage is on a NFS-mounted DRBD (Distributed Replicated
+      Block Device). If you haven't heard of DRBD before, boy, are in you luck.
+      Oh, it's just some fantastically reliable block device replication software
+      that operates as a kernel module. And what's that? It's been in the
+      mainline tree since around the 2.6 kernel release. So you probably
+      already have it! Just install the userspace tools.
+
+  * server.c HTTP server (https://blog.notryan.com/server.c)
+
+  * Let's Encrypt (via Redbird)
+
+  * FRP (fast reverse proxy) -> Vultr VPS (207.246.103.60 ingress IPv4)
+    * $3.50/month is the cheapest price for a machine with an IPv4 address
+      that can act as my ingress for *everything*. It looks at the HTTP
+      `Host:` header to determine how to route requests to different VMs.
+
+In theory, I could open a port on my local router and have the ISP act
+as the ingress. But... I'm not super comfortable with exposing my WAN's IP
+address in case someone decides to DDOS my network.
+
+-------------------------------------------------------------------------------
+                                   SECTIONS
+
+  1. What else is running in my closet?
+  2. server.c
+  3. Moving away from GitHub
+  4. Moving away from Netlify / Cloudflare
+  5. rss.c
+  6. Future Plans
+-------------------------------------------------------------------------------
+                        What else is running my closet?
+
+* https://videos.rmj.us
+* https://notryan.com
+* https://notryan.com/pdf
+* WebFPGA (https://beta.webfpga.io)
+* WebFPGA Forum (https://forum.webfpga.com)
+
+I'm honestly amazed by how snappy the Discourse forum is on my home network
+ISP (Spectrum, Los Angeles). Also, go ahead and run a synthesis job on
+the WebFPGA IDE -- it's even faster on our local servers.
+
+Look at this way, cloud VPSs are a total rip-off in terms of compute power.
+The two reasons I would rent a VPS is: uptime and network access. Having a
+publicly reachable IP address is a must-have for any networked application.
+Most VPS providers charge $5/month for one vCore and 512 MB of RAM. I can buy a
+used Thinkpad T440p off eBay for a little over $100. It has 8 vCores and 8 GB
+of RAM. It has a battery life of four hours. If someone happens to trip the
+breaker, the laptop won't die. It's like having an automatic UPS built into the
+server!
+
+By moving everything to on-premise machines, I've cut the WebFPGA server bills
+from $80/month (DigitalOcean) to $3.50/month for the IPv4 ingress. I have a
+full Kuberenetes install on-premise hosting the backend. Yes, there might be
+downtime. But the power has gone out only twice in three years.  And the
+internet has never gone out. I have redundancy plans. I can spin up the same
+cluster setup within 10-15 minutes of being notified. But honestly, I used to
+view downtime as the end of the world, but I've discovered that most users
+are relatively congenial about it. That's not an excuse to slack though!
+We all dream of 100% uptime. I'm honestly okay with 99.9% uptime; that's
+about 9 hours per month. Not bad.
+
+-------------------------------------------------------------------------------
+                                    server.c
+
+  ryan@kk ~ $ wrk http://localhost:8080
+
+  Running 10s test @ http://localhost:8080
+    2 threads and 10 connections
+    Thread Stats   Avg      Stdev     Max   +/- Stdev
+      Latency   427.45us  230.79us   5.64ms   87.28%
+      Req/Sec     9.09k     1.03k   14.45k    63.68%
+    181879 requests in 10.10s, 198.26MB read
+
+  Requests/sec:  18008.57
+  Transfer/sec:     19.63MB
+
+I've made some assumptions when developing this server. So there are a few
+_quirks_. Namely, the server has two content-type modes. It either serves
+index.html as `text/html`... and everything else as `text/plain`. Additionally,
+it uses blocking input/output: accept()->read()->write()->shutdown().
+Someone could... block the next user from fetching by running
+`nc remote.name 80` without sending any data, blocking the server from any
+requests. But since this server is behind a proxy that looks at the HTTP
+header's for the `Host:` field... we can assume that our own proxy won't
+screw us over. Maliciously long requests won't harm us.
+
+-------------------------------------------------------------------------------
+                            Moving away from GitHub
+
+Pushing to Github is perceptibly slow compared with pushing via SSH to a VPS.
+Plus using your own machines allows you to do *immoral stuff*, such as
+pushing 100 MB files, if you feel like it. I have versioned controlled,
+quite a few mega-repos where the primary content is not text files at all.
+Shame me all you want, but being able to time-travel through my photo/video
+collections is fantastic. I don't really care that my 2 GB repo takes 4 GB
+on disk... Tangents aside, here is the time it takes to push a text file to
+Github versus my VPS. (Note: the VPS pathway is client->Vultr->VPS)
+
+  # Time it takes to push a change to a simple text file.
+  ryan@kk ~/blog.notryan.com $ time git push origin
+  real    0m5.123s
+
+  ryan@kk ~/blog.notryan.com $ time git push mir
+  real    0m1.423s
+
+-------------------------------------------------------------------------------
+                     Moving away from Netlify / Cloudflare
+
+Previously, my static site deploy methodology was to push to Github,
+then have Netlify automatically pick that up, build and deploy. However...
+Netlify uses CDNs which takes time to propagate. On top of that, their
+build process is not the most efficient for my use case because they
+do a full git clone and spin up what I assume to be a Docker container
+that installs Node.js/Ruby/etc. Average time to visibility was about 2 minutes.
+A small part of that is Cloudflare caching the website "for speed". I've
+disabled my Cloudflare proxy. I don't want the Internet to get too reliant
+on these guys, so I'm doing my part to self-host.
+
+Now, my current process builds and deploys in less than a second. And my site
+is live immediately. I'm not anticipating thousands of requests per second
+and global access equality. I don't really need CDNs... Sorry if my site takes
+100ms longer to load where you live.
+
+My current build is as such:
+  git push
+    -> triggers a git post-update hook
+      -> git restore .
+      -> git pull
+      -> ./build.sh
+
+This goes for my entire site. Not just my blog. It's nice because it's only
+pulling the minute changes I made. The build scripts happen so fast that
+I don't even bother forking the process. When I deploy, I see the full
+log in my client's terminal. For example, this push went live in less than
+a second:
+
+  ryan@kk ~/blog.notryan.com $ git push
+
+  Enumerating objects: 7, done.
+  Counting objects: 100% (7/7), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (4/4), done.
+  Writing objects: 100% (4/4), 1.50 KiB | 1.50 MiB/s, done.
+  Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+  remote: From /home/ryan/_enc/notryan.com
+  remote:    0c9c211d..aa11aa43  master     -> origin/master
+  remote: Merge made by the 'recursive' strategy.
+  remote:  blog/009.txt.draft | 48 +++++++++++++++++++++++++++++++++++------
+  remote:  1 file changed, 42 insertions(+), 6 deletions(-)
+  To mir:_enc/notryan.com.git
+     0c9c211d..aa11aa43  master -> master
+
+-------------------------------------------------------------------------------
+                                     rss.c
+
+Ah! Good 'ol RSS. I've recently "discovered" RSS myself, (which some people
+might find insane.)
+
+I think it's gosh darn amazing. I've converted all of my YouTube subscriptions
+to RSS, and they show up in Thunderbird when they post a new video. I don't
+have to deal with YouTube's distracting/time-consuming sidebar recommendations
+ever. The video link and title just shows up in my RSS reader -- then I can
+use `mpv` to watch the video.
+
+Anyways, I wanted to offer spec-adherent RSS on my site. I've created a C
+program to do exactly that. Subscribe to be notified of future posts!
+
+  https://blog.notryan.com/rss.c
+  https://blog.notryan.com/rss.xml
+
+-------------------------------------------------------------------------------
+                                  Future Plans
+
+I'm thinking about converting server.c to use poll() instead of blocking
+syscalls. I don't want to introduce too much complexity though. I like poll()'s
+function prototype a lot more than select()/epoll(), so I will probably stick
+with that. The tricky part is figuring out how to sync two threads. I would
+prefer to use a simple fork() call, but the processes won't have shared
+memory... anyways, that's for a future time.
+
+Features that would be nice to have:
+  * HTTPS
+  * HEAD requests
+  * Content-Type determined by file extension, so I can serve images properly
+-------------------------------------------------------------------------------
+
+Anyways, thanks for reading!
+  -- (Most definitely not) Ryan
+
+-------------------------------------------------------------------------------
+
+https://www.reddit.com/r/programming/comments/gdxh3w/http_blog_server_100_lines_of_c_in_a_closet/
+https://www.reddit.com/r/C_Programming/comments/gdy2av/serverc_100_lines_of_c_in_a_closet/

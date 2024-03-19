@@ -1,3 +1,6 @@
+release date: 2024-03-18
+----
+
 # Specifications
 
 ## NVIDIA DGX B200 Specifications

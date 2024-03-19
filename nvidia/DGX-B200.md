@@ -1,4 +1,4 @@
-# ** hardware release date: 2024-03-18 **
+# **hardware release date: 2024-03-18**
 ----
 
 # Specifications

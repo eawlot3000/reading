@@ -1,11 +1,26 @@
 # The real reading list ❤️
 
 
+## EN
+* [Hacker News.](https://news.ycombinator.com/news)
+* [Slate Star Codex.](https://slatestarcodex.com/)
+* [LessWrong](https://www.lesswrong.com/)
+* [Hacker Newsletter](https://hackernewsletter.com/)
+* [Geohot's blog](https://geohot.github.io/blog/)
 
+
+## CN
+* [V2EX](https://www.v2ex.com)
+
+
+
+
+----
 -->
-tech in gen
-security
+tech in gen?
+security?
 news?
+... and more
 
 # >>> Topics <<<
 ---
@@ -51,6 +66,10 @@ news?
 * [DKB.](https://dkb.io/)
 * [Tom’s Blog. 卡辛斯基《论工业社会及其未来》.](http://yoursite.com/2018/06/20/unabomber1/index.html)
 * [卡钦斯基：论工业社会及其未来 | 素生.](https://z.arlmy.me/Wiki/library/Original_Kaczynski_IndustrialSocietyAndItsFuture.html)
+* [Linus @ notion personal blog](https://thesephist.com)
+* [Karina Nguyen @ openai](https://karinanguyen.com)
+* [Jason Wei @ openai](https://www.jasonwei.net)
+* [Kamilė Lukošiūtė @ LLM evaluations](https://kamilelukosiute.com/home)
 
 ## AI / ML
 * [This AI Does Not Exist](https://thisaidoesnotexist.com/)

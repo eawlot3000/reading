@@ -10,6 +10,7 @@
 
 
 ## CN
+* [chinese hackernews](https://hn.buzzing.cc)
 * [V2EX](https://www.v2ex.com)
 
 
@@ -46,6 +47,7 @@ news?
 * [Hacker Newsletter](https://hackernewsletter.com/)
 * [Machine Intelligence Research Institute. All Publications.](https://intelligence.org/all-publications/)
 * [X Ai](https://x.ai)
+* [chinese top hackernews](https://hn.buzzing.cc)
 
 ## Blogs
 * [LessWrong](https://www.lesswrong.com/)

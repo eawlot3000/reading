@@ -2,15 +2,15 @@
 
 
 ## EN
-* [Hacker News.](https://news.ycombinator.com/news)
-* [Slate Star Codex.](https://slatestarcodex.com/)
+* [YC Hacker News](https://news.ycombinator.com/news)
+* [Slate Star Codex](https://slatestarcodex.com/)
 * [LessWrong](https://www.lesswrong.com/)
-* [Hacker Newsletter](https://hackernewsletter.com/)
+* [hackernewsletter (daily mailing)](https://hackernewsletter.com/)
 * [Geohot's blog](https://geohot.github.io/blog/)
 
 
 ## CN
-* [chinese hackernews](https://hn.buzzing.cc)
+* [chinese hackernews (a sub website translated)](https://hn.buzzing.cc)
 * [V2EX](https://www.v2ex.com)
 
 
